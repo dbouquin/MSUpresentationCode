@@ -25,7 +25,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 tfidf_vectorizer = TfidfVectorizer()
 tfidf_matrix = tfidf_vectorizer.fit_transform(documents)
 print tfidf_matrix.shape
-(4, 11)
 
 
 #### We now have the TF-IDF matrix (tfidf_matrix) for each document (the number of rows of the matrix) with 11 tf-idf terms (the number of columns from the matrix), we can calculate the Cosine Similarity between the first document (“The sky is blue”) with each of the other documents of the set:
